@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>jQuery is a Swiss Army Knife (and That's OK)</title>
+
+    <meta charset='utf-8'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script
+      src='slides.js'></script>
+  </head>
+
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+
+
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+
+
+
+      <article class='biglogo'>
+      </article>
+
+      <article>
+        <h1>jQuery is a Swiss Army Knife (and That's OK)</h2>
+        <p>
+          adam j. sontag
+          <br>
+          jQuery UK
+          <br>
+          19 April 2013
+        </p>
+      </article>
+
+      <article class="fill build">
+        <p>
+          <img src='images/sandwich-guy.jpg' style="opacity: 0.4">
+          <!--http://life.dailyburn.com/wp-content/uploads/2011/04/eat-more-sandwich.jpg-->
+        </p>
+        <q>Take it from me, jQuery is truly the greatest thing since sliced bread!</q>
+        <div class="author">
+          Big Fan of Sandwiches
+        </div>
+      </article>
+
+      <article class="fill build">
+        <p>
+          <img src='images/quay-jeery.jpg' style="opacity: 0.4;width: 100%;">
+          <!--http://imgur.com/gallery/leSkE -->
+        </p>
+      <q>Why, I'd rather change my name to <em>Quay Jeery</em> than use <em>jQuery!</em></q>
+        <div class='author'>
+          Holder of Strong Opinions
+        </div>
+      </article>
+
+      <article>
+        <h3>Big Fan of Sandwiches:</h3>
+        <ul class="build">
+          <li>jQuery "changed the way" I write JavaScript</li>
+          <li>Obscured away the "hard parts" of problems
+            <ul>
+              <li>DOM Traversal &amp; Manipulation</li>
+              <li>Events</li>
+              <li>AJAX</li>
+            </ul>
+          </li>
+          <li>Able to move away from a bunch of named global functions and `onclick=` to writing unobtrusive apps</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Holder of Strong Opinions:</h3>
+        <ul class="build">
+          <li>"Unobtrusive? Not on my eyes!"</li>
+          <li>Hard to maintain</li>
+          <li>Difficult to talk about</li>
+          <li>Disorganized</li>
+          <li>Bloated</li>
+          <li>Slow</li>
+          <li>Monolithic</li>
+        </ul>
+      </article>
+
+      <article>
+      <h3>If you thought <em>those</em> were strong opinions...</h3>
+        <p class="build">
+          <img src='images/jquery-pos.png' style='width:100%;'>
+        </p>
+      </article>
+
+      <article>
+        <h3>...I find that hard to believe</h3>
+        <p class="build">
+          <img src='images/loopaperhat.jpg' style='height:500px;margin:0 auto;display:block;'>
+        </p>
+        <div class='source'>
+          Source: <a href="http://www.dontpaniconline.com/magazine/radar/top-10-most-useless-inventions-of-all-time">Don't Panic</a>
+        </div>
+      </article>
+
+      <article class='fill build'>
+        <p>
+          <img src='images/jquery-add-numbers.gif' style="width:100%;opacity:0.5;">
+        </p>
+        <h3 class="build">This old chestnut
+          <span>is actually insidious</span>
+        </h3>
+        <p>It promulgates a belief that:</p>
+        <ul class="build">
+          <li>People who take jQuery seriously don't take JavaScript seriously</li>
+          <li>People who take jQuery seriously shouldn't be taken seriously</li>
+          <li>jQuery shouldn't be taken seriously</li>
+        </ul>
+      </article>
+
+      <article class='fill'>
+        <h3>jQuery is not an elixir!</h3>
+        <p>
+          <img src='images/elixir.jpg'>
+        </p>
+        <div class='source white'>
+          Source: <a href="http://untcomdes.blogspot.com/2010/08/esther-aarts-illustration-pushing-her.html">Esther Aarts</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>
+          But &hellip;
+        </h2>
+      </article>
+
+      <article class='fill'>
+        <h3>jQuery is not the enemy!</h3>
+        <p>
+          <img src='images/fencing.jpg'>
+        </p>
+        <div class='source white'>
+          Source: <a href="http://www.puckandmary.com/blog_puck/2011/06/spanish-fencing-the-atajo/">A Midsummer Night's Blog</a>
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>jQuery is just a tool!</h3>
+        <p>
+          <img src='images/paulyd.jpg' width="900" style="top:-55px;">
+        </p>
+        <p class="build">
+          <img src='images/ronaldo-crying.jpg' style="width:100%;">
+        </p>
+      </article>
+
+      <article class='fill'>
+        <h3>Building a web app is kind of like building a house</h3>
+        <img src='images/buildinghouse.jpg' width="900" style="top:-377px;">
+        <ul class="teal" >
+          <li>You have to use many different tools</li>
+          <li>You have to build the foundation <em>before</em> you start wiring</li>
+        </ul>
+        <div class='source white'>
+          Source: <a href="http://www.amazon.com/Building-Our-House-Jonathan-Bean/dp/0374380236">Building Our House</a>
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>jQuery is a multitool</h3>
+        <img src='images/knife-leatherman-wave.jpg' width="900">
+        <ul class="build">
+          <li>Useful, versatile for all skill levels</li>
+          <li>Sometimes it <em>does the entire task</em></li>
+          <li>Other times, it <em>helps you work the other tools better</em></li>
+          <li><strong>You can't build an entire house with it!</strong></li>
+          <li>Well, you <em>can</em>, but it would be unsafe and you wouldn't want to live in it!</li>
+
+        </ul>
+        <div class='source white'>
+          Source: <a href="http://www.amazon.com/Building-Our-House-Jonathan-Bean/dp/0374380236">Building Our House</a>
+        </div>
+      </article>
+
+      <article>
+        <h3>[Slide That Clearly References The Talk Title]</h3>
+        <img src='images/jquery-swiss-army-knife.png' style="width:100%;margin-top:2em;">
+      </article>
+
+      <article>
+        <h2>
+          jQuery is just a global constructor with a bunch of handy static methods attached
+        </h2>
+      </article>
+
+      <article>
+        <h3>
+          jQuery Objects
+        </h3>
+        <section>
+        <pre>
+$("div"); // Looks like a 'magic invocation'
+jQuery("div"); // Looks like a good ol' function call
+new jQuery("div"); // What's 'actually happening'
+</pre>
+        <p>In all cases, you get back a <a href="http://learn.jquery.com/using-jquery-core/jquery-object/">jQuery object</a>, an array-like structure
+        that's like much <em>sugarier</em> version of a DOM <a href="https://developer.mozilla.org/en-US/docs/DOM/NodeList">NodeList</a>.</p>
+        </section>
+      </article>
+
+      <article>
+        <h3>
+          All for one, one for all
+        </h3>
+        <p>jQuery unifies the experience of:</p>
+        <ul>
+          <li>Working with exactly 1 element as many elements</li>
+          <li>Working <em>new</em> elements the same as <em>old</em> elements</li>
+        </ul>
+        <pre>
+// Next element sibling of one element with an ID
+$("#onlyOne").next();
+
+// Next element sibling of all elements with a class
+$(".lots").next();
+
+// A brand new element
+$(&quot;&lt;div&gt;Hello World&lt;/div&gt;&quot;);
+</pre>
+        <p>Each of these returns an object with the <strong>same exact interface</strong></p>
+      </article>
+
+      <article class="build">
+        <q>Think of jQuery objects as a basic building block of your application</q>
+        <div class="author">Me</div>
+      </article>
+
+
+      <article class='fill smaller'>
+        <h3>A note on DRY</h3>
+        <img src="images/towel.jpg">
+        <q>
+          It's not just about avoiding writing <strong>duplicative
+            code</strong>, it's about not <strong>repeating unnecessary
+            actions</strong>. (And <code>jQuery()</code> is an
+          <strong>action</strong>!)
+        </q>
+      </article>
+
+      <article class="nobackground">
+        <h3>Don't construct things you don't plan to use</h3>
+        <p>It would be fairly strange to encounter something like the following:</p>
+        <pre>
+JSON.parse( str );
+// or
+new RegExp( "^"+str, "ig" );
+// or
+isNaN( "blarg" );
+</pre>
+        <p>because when you create things in JavaScript, you typically use a variable so you can <em>actually use them later.</em></p>
+        <pre>
+var myObj = JSON.parse( str );
+// or
+var rDynamic = new RegExp( "^"+str, "ig" );
+// or
+var valid = !isNaN( "blarg" );
+</pre>
+      </article>
+
+      <article class='nobackground'>
+        <h3>
+          When it comes to jQuery, people seem to forget this
+        </h3>
+
+        <a class="jsbin-embed" href="http://jsbin.com/uzitut/2/embed?javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+      </article>
+
+      <article class="smaller nobackground">
+        <h3>Always™ Cache Your jQuery Selections</h3>
+        <p>
+          All you're doing is calling a function with a useful return value &hellip; use it!
+        </p>
+        <pre>
+var $articles = $("article");
+// In fact, because most jQuery methods return a jQuery object, this works as well
+var $articles = $("article").click( fn );
+
+// Once you have one collection, use it as the basis for other queries
+var $img = $articles.find("img");
+</pre>
+        <p>Don't repeat actions, even if they are "cheap"</p>
+        <pre>
+// Bad
+$("a").click(function(e) {
+  $(this).addClass("active");
+  $(this).parent().siblings().find("a").removeClass("active");
+  var o = $(this).offset();
+});
+
+// Better
+$("a").click(function(e) {
+  var $t = $(this),
+      o = $t.offset();
+  $t.addClass("active");
+  $t.parent().siblings().find("a").removeClass("active");
+});
+</pre>
+      </article>
+
+      <article class='nobackground'>
+        <a class="jsbin-embed" href="http://jsbin.com/uzitut/5/embed?javascript">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+      </article>
+
+      <article>
+        <h3>
+          Where Can I Save jQuery Objects
+        </h3>
+        <p>
+          As variables:
+        </p>
+        <pre>
+var $friends = $(".friend");
+</pre>
+        <p>As properties of objects:</p>
+        <pre>
+var catApp = {
+  $cats: $(".cat"),
+  init: function() {
+    this.$cats.click( catClicked )
+  },
+  catClicked: function(e) {
+    alert("'Meow', said " + $(e.target).data("name") );
+  }
+};
+</pre>
+      </article>
+
+      <article>
+        <h2>
+          Caching selectors can make your app faster, but more importantly,
+          it makes it better organized and easier to talk about!
+        </h2>
+      </article>
+
+      <article class="build">
+        <q>jQuery is JavaScript, but so is JavaScript</q>
+        <div class="author">
+          Me
+        </div>
+      </article>
+
+      <article>
+        <h3>
+          Hey, who you callin' an idiom?
+        </h3>
+        <section>
+        <ul>
+          <li>There are often <em>idiomatic</em> patterns for common jQuery use cases</li>
+          <li>However, there are also native JS or DOM solutions as well</li>
+          <li>Don't use jQuery for <strong>everything</strong> just because it's <strong>there</strong></li>
+        </ul>
+        <pre>
+$("a").click(function(e) {
+  // Bad
+  var id = $(this).attr("id");
+
+  // Good
+  var id = this.id;
+});
+</pre>
+        <p><strong>Don't waste time looking for "The jQuery Equivalent" of <code>Math.round</code>, <code>parseInt</code>, etc.</strong> &mdash; you've already found it.</p>
+        </section>
+      </article>
+
+      <article class="fill">
+        <img src="images/cyoa.jpg">
+        <p style="bottom: 100px; position: absolute; left: 0; margin: 0 40px; ">
+          The stereotypical "jQuery Application" with lots of anonymous functions, "anonymous" collections, and a heavy dependence on selectors can quickly
+          devolve into a <strong>Choose Your Own Adventure Story About The DOM</strong> with no beginning, middle, or end.
+        </p>
+      </article>
+
+      <article>
+        <h2>The DOM is not your application, it is the visible manifestation of your application.</h2>
+      </article>
+
+      <article>
+        <h2>Put up the walls of your house before you try to paint them.</h2>
+      </article>
+
+      <article class="fill build">
+        <q>But I'm building something bigger than a house!</q>
+        <img src="images/bricklaying-child.jpg" style="opacity:0.5;">
+        <div class='source'>
+          Source: <a href="http://www.edp24.co.uk/news/education/king_s_lynn_pupils_enjoy_bricklaying_at_the_college_of_west_anglia_1_1236836">EDP24</a>
+        </div>
+      </article>
+
+      <article class="fill build">
+        <h3>You need bigger blocks!</h3>
+        <img src="images/shipping-container-hotel.jpg">
+        <p>MVC Frameworks like Backbone, Ember, Angular, CanJS all build on top of jQuery, letting you build the larger, application-centric pieces
+        while they take care of fiddling with the DOM, sending Ajax requests, and so forth.</p>
+        <div class='source'>
+          Source: <a href="http://www.living-green-choices.com/shippingcontainers.html">Living Green Choices</a>
+        </div>
+      </article>
+
+      <article class="build">
+        <h3>Yo dawg, I herd you like Swiss Army Knives</h3>
+        <img src='images/jquery-swiss-army-knife-inception.png' style="width:100%;margin-top:2em;">
+      </article>
+
+      <article>
+        <h3>jQuery: My Gateway Drug</h3>
+        <ul class="build">
+          <li>I studied <strong>THEATRE</strong></li>
+          <li>Knew HTML and CSS, but JavaScript wasn't clicking for me</li>
+          <li>Then I found jQuery – and the jQuery community – and the light went on</li>
+          <li>I'm certainly not the only person to whom this has happened!</li>
+          <li><a href="https://medium.com/the-javascript-collection/d9e3f716bb9e">Oscar Godson - jQuery made me become a programmer</a></li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>SO SHIT LIKE THIS MAKES ME FURIOUS</h3>
+        <img src="images/jquery-dummies.png" style="display:block;margin:0 auto;">
+      </article>
+
+      <article>
+        <h3>"The jQuery Dummies"</h3>
+        <ul class="build">
+          <li>This is like not wanting people to learn English because you're worried they'll write mediocre poetry</li>
+          <li>The web and JavaScript are broadly accessible; millions and millions of people have used jQuery</li>
+          <li>Some of them are going to write bad code (sorry?), but (hopefully) everyone is on a journey</li>
+          <li>Making fun of people for not knowing something you also didn't know once is <em>really stupid</em></li>
+          <li>A lot of people have gone onto "bigger and better things" from humble beginnings learning jQuery – that's <em>really awesome</em></li>
+        </ul>
+      </article>
+
+      <article class="fill">
+      <q class="build">There are a lot of dumb and painful mistakes you can make with a pocketknife. <strong>It's not the knife's fault</strong> <span>(usually).</span</q>
+      </article>
+
+      <article>
+        <h3>Open Source Engagement</h3>
+        <ul class="build">
+          <li>Much like programming itself, learning the mechanics of open source can be intimidating</li>
+          <li>In addition to code, we've open sourced all of our library documentation and site design</li>
+          <li>New contribution hub explains how it all works: <a href="http://contribute.jquery.org">contribute.jquery.org</a></li>
+          <li>Providing opportunities for people to be effective and make contributions while learning how to use git, GitHub, etc., while simultaneously
+          meeting and collaborating with the people who work in various aspects of the project every day</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>THE SOFTWARE IS PROVIDED "AS IS"</h3>
+        <img src="images/jquery-plugins-tweet.png" style="display:block;margin:0 auto;margin-top:2em;width:100%;">
+      </article>
+      <article>
+
+        <h3>We're All In This Together</h3>
+        <ul class="build">
+          <li>jQuery happens every day online, and regularly in person</li>
+          <li>Relationships that go <strong>beyond</strong> code <strong>improve</strong> code</li>
+          <li>Supporting the community is an investment that keeps jQuery growing</li>
+          <li>Conferences, Developer Summits create a two-way flow of ideas and contributors</li>
+          <li>Structure of jQuery Team has changed markedly since the beginning of Foundation – anyone who contributes regularly is invited to join</li>
+          <li>Rising tide lifts all boats</li>
+      </article>
+
+      <article class="fill build">
+        <img src='images/large-spider-web.jpg'>
+        <h3>Collaborating To Work On The Web</h3>
+        <p>We don't just work on jQuery</p>
+        <ul class="build">
+          <li>Heavy influence on <code>querySelectorAll</code></li>
+          <li>jQuery Foundation is a member of ECMA and W3C, working on the future of JavaScript and the Open Web platform</li>
+          <li>Pointer events, XHR</li>
+          <li>Bringing the web developer's perspective to the standards process</li>
+        </ul>
+      </article>
+
+      <article class="fill build">
+        <q>[Meaningful concluding quote]</q>
+        <div class="author">[Significant historical figure]</div>
+      </article>
+
+      <article>
+        <h3>
+          Thanks!
+        </h3>
+        <ul>
+            <li><strong>adam j. sontag</strong></li>
+            <li>adam dot sontag at jquery dot com</li>
+            <li><a target="_blank" href="http://twitter.com/ajpiano">@ajpiano</a></li>
+            <li>I'm ajpiano on the <a href="http://irc.jquery.org">#jquery channels on freenode IRC</a></li>
+            <li><a target="_blank" href="http://bocoup.com/">Bocoup</a></li>
+            <li><a target="_blank" href="http://ajpiano.com/">my blog</a></li>
+        </ul>
+      </article>
+
+    </section>
+
+  </body>
+</html>
