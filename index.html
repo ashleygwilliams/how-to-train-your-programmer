@@ -46,9 +46,9 @@
         <p>
           adam j. sontag
           <br>
-          jQuery UK
+          jQuery Portland
           <br>
-          19 April 2013
+          14 June 2013
         </p>
       </article>
 
@@ -166,7 +166,7 @@
           <img src='images/paulyd.jpg' width="900" style="top:-55px;">
         </p>
         <p class="build">
-          <img src='images/ronaldo-crying.jpg' style="width:100%;">
+          <img src='images/portlandia-bike-messenger.png' style="width:100%;">
         </p>
       </article>
 
@@ -342,7 +342,7 @@ var $friends = $(".friend");
 var catApp = {
   $cats: $(".cat"),
   init: function() {
-    this.$cats.click( catClicked )
+    this.$cats.click( this.catClicked )
   },
   catClicked: function(e) {
     alert("'Meow', said " + $(e.target).data("name") );
