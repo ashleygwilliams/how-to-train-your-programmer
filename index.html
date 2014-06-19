@@ -24,9 +24,8 @@
 
   <style>
     .slides.template-default article.flatironschool {
-  background: white url(images/flatironschool.png) 50% 50% no-repeat;
-}
-
+      background: white url(images/flatironschool.png) 50% 50% no-repeat;
+    }
   </style>
 
   <body style='display: none'>
@@ -49,20 +48,61 @@
         </p>
       </article>
 
-      <article>
-        <h1>Computer Science education is EXPLODING</h1>
+      <article class="fill">
+        <div class="build">
+          <p>
+            <img src='images/sandwich-guy.jpg' style="opacity: 0.4">
+            <!--http://life.dailyburn.com/wp-content/uploads/2011/04/eat-more-sandwich.jpg-->
+          </p>
+          <q>Take it from me, only students of mathematics can learn to code!</q>
+          <div class="author">
+            Old School CS Professor
+          </div>
+        </div>
+      </article>
+
+      <article class="fill">
+        <div class="build">
+          <p>
+            <img src='images/quay-jeery.jpg' style="opacity: 0.4;width: 100%;">
+            <!--http://imgur.com/gallery/leSkE -->
+          </p>
+          <q>If you don't know C, you are not a real developer!</em></q>
+          <div class='author'>
+            Guy who got too close to the metal
+          </div>
+        </div>
+      </article>
+
+      <article class="fill">
+        <div class="build">
+          <p>
+            <img src='images/quay-jeery.jpg' style="opacity: 0.4;width: 100%;">
+            <!--http://imgur.com/gallery/leSkE -->
+          </p>
+          <q>I can teach you to be a junior developer in 3 months! No, 3 weeks!</em></q>
+          <div class='author'>
+            Eager Entrepreneur
+          </div>
+        </div>
       </article>
 
       <article>
-        <h1>Who should learn to code?</h1>
+        <h1>Computer Science education is growing extremely rapidly...</h1>
+      </article>
+
+      <article style="text-align: center;">
+        <h1>... in a word, EXPLODING</h1>
+        <img src="images/explode.gif"/>
       </article>
 
       <article>
-        <h1>What do we mean by coding?</h1>
-      </article>
-
-      <article>
-        <h1>How should you learn?</h1>
+        <ul class="build">
+          <li><h1 style="margin-top: 40px;">Who should learn to program?</h1></li>
+          <li><h1  style="margin-top: 40px;">What does it mean to teach/learn programming?</h1></li>
+          <li><h1 style="margin-top: 40px;">How should one learn?</h1></li>
+          <li><h1  style="margin-top: 40px;">What does it mean to program?</h1></li>
+        </ul>
       </article>
 
       <article>
@@ -70,50 +110,69 @@
         <h3>and I work at a company called Bocoup.<h3>
       </article>
 
+      <article>
+        <h1>We're all about the OPEN WEB.</h1>
+        <h2></h2>
+      </article>
+
       <article class='abstraction'>
         <img src="images/abstraction.jpg"/>
-        <h1>ABSTRACTION</h1>
+        <h1 style="margin-top: 40px;">ABSTRACTION</h1>
         <p>Our power, our muse, our curse.</p>
       </article>
 
       <article>
         <p>
           "The effective exploitation of his powers of abstraction must be regarded as one of the most vital activities of a competent programmer."
-            -Edsger W. Dijkstra, "The Humble Programmer" (1972)
+            <div class="author">
+              Edsger W. Dijkstra
+            </div>
+            <div class="source">
+              "The Humble Programmer" (1972)
+            </div>
         </p>
       </article>
 
-      <article class='flatironschool'>
+      <article class="expressiveness">
+        <h1>What do we mean by abstraction in programming?</h1>
+      </article>
+
+      <article style="text-align: center;">
+        <img src="images/flatironschool.png" style="text-align:center; margin: 150px auto 0 auto;"/>
+        <img src="images/flatironschool.jpg" style="text-align:center; width: 300px;"/>
       </article>
 
       <article class='iteration'>
-        <ul>
-          <li>Ruby
-            <pre>
-              array.each do |element|
-                #do something
-              end
-            </pre>
-          </li>
-          <li>C/Javascript
-            <pre>
-              for(i=0;i < array.length;i++){
-                //do something
-              }
-            </pre>
-          </li>
-        </ul>
+        <div>
+        <h3>Ruby</h3>
+          <pre>
+            array.each do |element|
+              #do something
+            end
+          </pre>
+        </div>
+          <div>
+        <h3>Javascript</h3>
+          <pre>
+            for(var i = 0; i < array.length; i++){
+              //do something
+            }
+          </pre>
+        </div>
       </article>
 
-      <article class="expressiveness">
-        What does it mean to be expressive?
-      </article>
 
       <article class="readability">
         <p>
           "Programs must be written for people to read, and only incidentally for machines to execute." 
-            - Abelson and Sussman
+          <div class="author">
+            Abelson and Sussman
+          </div>
         </p>
+        <div style="text-align: center; margin-top: 40px;">
+          <img src="images/abelson.jpg"/>
+          <img src="images/sussman.jpg"/>
+        </div>
       </article> 
 
       <article>
@@ -122,14 +181,18 @@
 
       <article class="feynman">
         <p>
-          "The real problem in speech is not precise language. The problem is clear language. The desire is to have the idea clearly communicated to the other person. It is only necessary to be precise when there is some doubt as to the meaning of a phrase, and then the precision should be put in the place where the doubt exists. It is really quite impossible to say anything with absolute precision, unless that thing is so abstracted from the real world as to not represent any real thing." - Richard Feynman
-
-          "New Textbooks for the "New" Mathematics", Engineering and Science volume 28, number 6 (March 1965) p. 9-15 at p. 14
+          "The real problem in speech is not precise language. The problem is clear language...It is really quite impossible to say anything with absolute precision, unless that thing is so abstracted from the real world as to not represent any real thing."
+          <div class="author">
+            Richard Feynman
+          </div>
+          <div class="source">
+            "New Textbooks for the "New" Mathematics", Engineering and Science volume 28, number 6 (March 1965) p. 9-15 at p. 14
+          </div>
         </p>
       </article>
 
       <article class='owl'>
-        <img src="images/howtodraw.jpg"/>
+        <img src="images/howtodraw.jpg" style="display: block; margin: 60px auto;"/>
       </article>
 
       <article>
@@ -138,26 +201,29 @@
 
       <article>
         <p>
-          "There is no abstract art. You must always start with something. Afterward you can remove all traces of reality." - Pablo Picasso
+          "There is no abstract art. You must always start with something. Afterward you can remove all traces of reality."
+          <div class="author">
+            Pablo Picasso
+          </div>
         </p>
+      </article>
+
+      <article>
+        <h1>Where should we begin?</h1>
       </article>
 
       <article class='sagan'>
         <p>
-          "If you wish to make an apple pie from scratch, you must first invent the universe." - Carl Sagan
+          "If you wish to make an apple pie from scratch, you must first invent the universe."
+          <div class="author">
+            Carl Sagan
+          </div>
         </p>
-        <img src="images/sagan.jpg"/>
+        <img src="images/sagan.jpg" style="display: block; margin: 20px auto;"/>
       </article>
 
       <article class='petervanroy'>
-        <img src="images/petervanroy.jpg"/>
-      </article>
-
-      <article>
-        <p>
-          "Six blind sages were shown an elephant and met to discuss their ex- perience. “It’s wonderful,” said the first, “an elephant is like a rope: slender and flexible.” “No, no, not at all,” said the second, “an ele- phant is like a tree: sturdily planted on the ground.” “Marvelous,” said the third, “an elephant is like a wall.” “Incredible,” said the fourth, “an elephant is a tube filled with water.” “What a strange piecemeal beast this is,” said the fifth. “Strange indeed,” said the sixth, “but there must be some underlying harmony. Let us investi- gate the matter further.”
-          – Freely adapted from a traditional Indian fable."
-        </p>
+        <img src="images/petervanroy.jpg" style="display: block; margin: 20px auto;"/>
       </article>
 
       <article>
@@ -181,36 +247,33 @@
       </article>
 
       <article>
-        <h1>Are we stuck with this this way?</h1>
-      </article>
-
-      <article>
-        <h1>What is Programming?</h1>
+        <h1>What do we even *mean* when we talk about programming?</h1>
       </article>
 
       <article>
         <img src="images/heidegger.jpg"/>
-      </article>
-
-      <article>
-        <h1>What is called Thinking?</h1>
         <img src="images/whatisthinking.jpg"/>
       </article>
 
       <article>
         <p>
-          "The most thought-provoking thing in our thought-provoking time is that we are still not thinking." - Martin Heidegger
-          What is Called Thinking? [Was heisst Denken?] (1951–1952), as translated by Fred D. Wieck and J. Glenn Gray (1968)
+          "The most thought-provoking thing in our thought-provoking time is that we are still not thinking."
+          <div class="author">  
+            Martin Heidegger
+          </div>
+          <div class="source">
+            What is Called Thinking? [Was heisst Denken?] (1951–1952), as translated by Fred D. Wieck and J. Glenn Gray (1968)
+          </div>
         </p>
       </article>
 
-      <article class="newPL">
+      <article class="newPL" style="text-align: center;">
         <img src="images/racket.png"/>
         <img src="images/pyret.png"/>
       </article>
 
-      <article class="visualPL">
-        <img src="images/scratch.jpg"/>
+      <article class="visualPL" style="text-align: center;">
+        <img src="images/scratch.jpg" style="margin-top: 50px;"/>
       </article>
 
       <article class='stravinksy'>
@@ -219,28 +282,44 @@
 
       <article>
         <p>
-          "It is the transcendent (or 'abstract' or 'self-contained') nature of music that the new so called concretism--Pop Art, eighteen-hour slices-of-reality films, musique concrete--opposes. But instead of bringing art and reality closer together, the new movement merely thins out the distinction." - Igor Stravinksy
-          "Themes and Conclusions", (1982)p. 188
+          "It is the transcendent (or 'abstract' or 'self-contained') nature of music that the new so called concretism--Pop Art, eighteen-hour slices-of-reality films, musique concrete--opposes. But instead of bringing art and reality closer together, the new movement merely thins out the distinction."
+          <div class="author">
+            Igor Stravinksy
+          </div>
+          <div class="source">Themes and Conclusions", (1982) p. 188</div>
         </p>
       </article>
 
       <article>
-        <img src="images/kuhn.jpg"/>
-      </article>
-
-      <article>
         <p>
-          "Scientists work from models acquired through education and through subsequent exposure to the literature often without quite knowing or needing to know what characteristics have given these models the status of community paradigms" - Thomas Kuhn, "The Structure of Scientific Revolutions", pg 46 (1962)
+          "Scientists work from models acquired through education and through subsequent exposure to the literature often without quite knowing or needing to know what characteristics have given these models the status of community paradigms"
+          <div class="author">
+            Thomas Kuhn 
+          </div>
+          <img src="images/kuhn.jpg" style="display: block; margin: 20px auto;"/>
+          <div class="source">
+            The Structure of Scientific Revolutions", pg 46 (1962)
+          </div>
          </p>
       </article>
 
       <article>
-        <ul>
-        <li>ashley williams</li>
-        <li>@ag_dubs</li>
-        <li>ashley@bocoup.com</li>
-        <li>ashleygwilliams</li>
+        <ul class="build">
+          <li><h1 style="margin-top: 40px;">Who should learn to program?</h1></li>
+          <li><h1  style="margin-top: 40px;">What does it mean to teach/learn programming?</h1></li>
+          <li><h1 style="margin-top: 40px;">How should one learn to program?</h1></li>
+          <li><h1  style="margin-top: 40px;">What does it mean to program?</h1></li>
         </ul>
+      </article>
+
+      <article class="fill">
+        <div style="padding: 20px; display: inline-block; background-color: white;">
+          <p><h1 margin-bototm:40px;>thank you!</h1></p>
+          <p>ashley williams</p>
+          <p>@ag_dubs</p>
+          <p>ashley@bocoup.com</p>
+          <p>ashleygwilliams</p>
+        </div>
         <img src="images/aidan.jpg"/>
       <article>
 
