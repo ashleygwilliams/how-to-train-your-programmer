@@ -5,8 +5,8 @@ Originially prepared for a talk at the University of Amsterdam's Coding for Huma
 ## PRESENTATIONS
 
 - [UPCOMING] [CascadiaFest 2015: Browser Day](http://2015.cascadiajs.com/browser/), 9 July 2015
-- MIT Media Lab: Social Computing Group, 8 October 2014 [slides](https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/MIT-fall2014)
-- Boston JS, 7 August 2014 [slides](https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/BostonJS-summer2014) [meetup](http://www.meetup.com/boston_JS/events/199002992/)
+- [MIT Media Lab: Social Computing Group](https://www.media.mit.edu/research/groups/social-computing), 8 October 2014 [slides](https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/MIT-fall2014)
+- [Boston JS](http://www.meetup.com/boston_JS/), 7 August 2014 [slides](https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/BostonJS-summer2014) [meetup](http://www.meetup.com/boston_JS/events/199002992/)
 - University of Amsterdam's Coding for Humanities Seminar, 17 June 2014 [slides](https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/UvA-summer2014) [CTH blogpost](http://codingthehumanities.com/posts/from-building-to-testing)
 
 
